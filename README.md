@@ -52,25 +52,21 @@
 
 Установка и запуск
 
-    1.Клонируйте репозиторий:
-
-git clone https://github.com/your_username/library-api.git
-cd library-api
-
-    2.Создайте виртуальное окружение:
+    
+    1.Создайте виртуальное окружение:
 
 python -m venv venv
 source venv/bin/activate  # для Windows: venv\Scripts\activate
 
-    3.Установите зависимости:
+    2.Установите зависимости:
 
 pip install -r requirements.txt
 
-    4.Примените миграции:
+    3.Примените миграции:
 
 alembic upgrade head
 
-    5.Запустите приложение:
+    4.Запустите приложение:
 
 uvicorn app.main:app --reload
 
