@@ -50,3 +50,28 @@
 Эндпоинт /analytics/ возвращает общее количество книг и авторов. Доступен только авторизованным пользователям.
 
 
+Установка и запуск
+
+    1.Клонируйте репозиторий:
+
+git clone https://github.com/your_username/library-api.git
+cd library-api
+
+    2.Создайте виртуальное окружение:
+
+python -m venv venv
+source venv/bin/activate  # для Windows: venv\Scripts\activate
+
+    3.Установите зависимости:
+
+pip install -r requirements.txt
+
+    4.Примените миграции:
+
+alembic upgrade head
+
+    5.Запустите приложение:
+
+uvicorn app.main:app --reload
+
+
